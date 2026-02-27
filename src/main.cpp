@@ -28,3 +28,8 @@ float distance;    ///< Stores calculated distance in centi
  * - Echo pin as INPUT
  * - Serial communication at 9600 baud rate
  */
+void setup() {
+  Serial.begin(9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+}
