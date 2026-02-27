@@ -11,8 +11,8 @@
  * Distance (cm) = (Time × Speed of Sound) / 2
  * Speed of Sound ≈ 0.034 cm/µs
  *
- * @author Bhartendu Ji
- * @date 18 Feb 2026
+ * @author Samya Arora
+ * @date 27 Feb 2026
  */
 / Pin Definitions
 int trigPin = 9;   ///< Trigger pin connected to digital pin 9
@@ -20,3 +20,11 @@ int echoPin = 10;  ///< Echo pin connected to digital pin 10
 
 long duration;     ///< Stores the time taken for echo to return (in microseconds)
 float distance;    ///< Stores calculated distance in centi
+/**
+ * @brief Initializes serial communication and pin modes.
+ *
+ * Sets:
+ * - Trigger pin as OUTPUT
+ * - Echo pin as INPUT
+ * - Serial communication at 9600 baud rate
+ */
