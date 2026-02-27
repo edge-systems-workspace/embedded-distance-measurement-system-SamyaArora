@@ -14,3 +14,9 @@
  * @author Bhartendu Ji
  * @date 18 Feb 2026
  */
+/ Pin Definitions
+int trigPin = 9;   ///< Trigger pin connected to digital pin 9
+int echoPin = 10;  ///< Echo pin connected to digital pin 10
+
+long duration;     ///< Stores the time taken for echo to return (in microseconds)
+float distance;    ///< Stores calculated distance in centi
